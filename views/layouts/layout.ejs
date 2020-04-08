@@ -9,8 +9,8 @@
   <title>Qrystal wiki</title>
 
   <!-- Bootstrap CSS CDN -->
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rCA2D+D9QXuP2TomtQwd+uP50EHjpafN+wruul0sXZzX/Da7Txn4tB9aLMZV4DZm" crossorigin="anonymous">
   <!-- Our Custom CSS -->
   <!-- Scrollbar Custom CSS -->
   <link rel="stylesheet"
@@ -32,6 +32,100 @@
 <body>
 
   <div class="wrapper">
+    <!-- Mobile navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mobileNav">
+      <a class="navbar-brand" href="#">Qrystal wiki</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li>
+            <a href="#itemsMobile" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Items</a>
+            <ul class="collapse list-unstyled" id="itemsMobile">
+              <li>
+                <a href="/items/hammer">Hammer</a>
+              </li>
+              <li>
+                <a href="#">Stone Pebbles</a>
+              </li>
+              <li>
+                <a href="#">Condensed material</a>
+              </li>
+              <li>
+                <a href="#">Crystalic Ender Pearl</a>
+              </li>
+              <li>
+                <a href="#">Coal Dust</a>
+              </li>
+              <li>
+                <a href="#">Charcoal Dust</a>
+              </li>
+              <li>
+                <a href="#">Sulfur</a>
+              </li>
+              <li>
+                <a href="#">Niter</a>
+              </li>
+              <li>
+                <a href="#">Activated Carbon</a>
+              </li>
+              <li>
+                <a href="#">Fused Quartz</a>
+              </li>
+              <li>
+                <a href="#">Flask</a>
+              </li>
+              <li>
+                <a href="#">Quartz Tube</a>
+              </li>
+              <li>
+                <a href="#">Condensed material</a>
+              </li>
+              <li>
+                <a href="#">Condensed material</a>
+              </li>
+              <li>
+                <a href="#">Condensed material</a>
+              </li>
+              <li>
+                <a href="#">Condensed material</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#blocksMobile" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" Blocks</a>
+              <ul class="collapse list-unstyled " id="blocksMobile">
+                <li>
+                  <a href="#" class="dropdown-item">Gray Block</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Weird purple Block</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Aquamarine Block</a>
+                </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#guidesMobile" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Guides</a>
+            <ul class="collapse list-unstyled" id="guidesMobile">
+              <li>
+                <a href="#">How to Life</a>
+              </li>
+              <li>
+                <a href="#">How to mine Cobblestone</a>
+              </li>
+              <li>
+                <a href="#">How to die</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- Sidebar  -->
     <nav id="sidebar">
       <div class="sidebar-header">
@@ -129,21 +223,16 @@
     <!-- Page Content  -->
     <div id="content">
       <div id="content-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
           <div class="container-fluid">
 
-            <button type="button" id="sidebarCollapse" class="btn btn-primary disabled">
+            <button type="button" id="sidebarCollapse" class="btn btn-secondary">
               <i class="fas fa-angle-double-left" id="toggleArrow"></i>
               <span></span>
             </button>
-            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <i class="fas fa-align-justify"></i>
-            </button>
 
-            <div class="md-form active-purple active-purple-2 col-xl-5">
-              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            <div class="my-lg-0 md-form active-purple active-purple-2 col-xl-5" id="search-bar">
+              <input class="form-control mr-sm-2 sbdark" type="text" placeholder="Search" aria-label="Search">
             </div>
 
             <div class="custom-control custom-switch">
@@ -194,7 +283,6 @@
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         $('#toggleArrow').toggleClass('fa-rotate-180');
-        console.log("excue me de la foc")
       });
     });
   </script>
