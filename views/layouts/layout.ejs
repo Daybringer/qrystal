@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="/css/style.css">
   <!-- Scrollbar Custom CSS -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -24,7 +23,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
     integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
     crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -39,7 +38,7 @@
 
       </div>
 
-      <ul class="list-unstyled components">
+      <ul class="list-unstyled components" style="border: none;">
         <li>
           <a href="#items" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Items</a>
           <ul class="collapse list-unstyled" id="items">
@@ -131,8 +130,8 @@
         <div class="container-fluid">
 
           <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fas fa-align-left"></i>
-            <span>Toggle Sidebar</span>
+            <i class="fas fa-angle-double-left" id="toggleArrow"></i>
+            <span></span>
           </button>
           <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -140,7 +139,7 @@
             <i class="fas fa-align-justify"></i>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">Donate</a>
@@ -149,7 +148,7 @@
                 <a class="nav-link" href="#">About</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </nav>
 
@@ -184,6 +183,8 @@
         $('#sidebar, #content').toggleClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        $('#toggleArrow').toggleClass('fa-rotate-180');
+        console.log("excue me de la foc")
       });
     });
   </script>

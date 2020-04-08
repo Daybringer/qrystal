@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
   font-family: 'Poppins', sans-serif;
   background: #fafafa;
@@ -144,6 +143,14 @@ a.article,
 a.article:hover {
   background: #6d7fcc !important;
   color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR TOGGLE ICON
+----------------------------------------------------- */
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 /* ---------------------------------------------------
