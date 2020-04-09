@@ -1,0 +1,62 @@
+{
+  "diamond_hammer": {
+    "title": "Diamond Hammer",
+    "pattern": [
+      ["X","#","X"],
+      ["","#",""],
+      ["","#",""]],
+    "tag": {
+      "X":{
+        "url":"/assets/vannila/dia.png",
+        "title":"Diamond"
+      },
+      "#":{
+        "url":"/assets/vannila/wood_stick.png",
+        "title":"Stick"
+      }
+    },
+    "cnt": 1,
+    "url": "/assets/items/dia_hammer.png",
+    "type": "shaped"
+  },
+  "iron_hammer": {
+    "title": "Iron Hammer",
+    "pattern": [
+      ["X","#","X"],
+      ["","#",""],
+      ["","#",""]],
+    "tag": {
+      "X":{
+        "url":"/assets/vannila/iron_ingot.png",
+        "title":"Iron "
+      },
+      "#":{
+        "url":"/assets/vannila/wood_stick.png",
+        "title":"Stick"
+      }
+    },
+    "cnt": 1,
+    "url": "/assets/items/iron_hammer.png",
+    "type": "shaped"
+  },
+  "stone_hammer": {
+    "title": "Stone Hammer",
+    "pattern": [
+      ["X","#","X"],
+      ["","#",""],
+      ["","#",""]],
+    "tag": {
+      "X":{
+        "url":"/assets/vannila/stone.png",
+        "title":"Stone"
+      },
+      "#":{
+        "url":"/assets/vannila/wood_stick.png",
+        "title":"Stick"
+      }
+    },
+    "cnt": 1,
+    "url": "/assets/items/stone_hammer.png",
+    "type": "shaped"
+  }
+}

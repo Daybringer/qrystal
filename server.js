@@ -1,4 +1,5 @@
 
+"use strict"
 
 const express = require("express");
 const app = express();
@@ -24,6 +25,11 @@ app.use(function (req, res, next) {
   res.status(404).render('missing');
 });
 
+const fs = require("fs");
 
+//Read  and store Json lookup 
+let rawdata = fs.readFileSync('./views/lookup.json');
+let lookup = JSON.parse(rawdata);
+app.locals.lookup = lookup;
 
-app.listen(process.env.PORT || 80);
+app.listen(process.env.PORT || 3000);

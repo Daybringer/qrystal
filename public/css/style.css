@@ -229,4 +229,95 @@ p {
   color: #fafafa !important;
   background-color: #404040 !important;
 }
+
+/* ---------------------------------------------------
+        DARK MODE
+    ----------------------------------------------------- */
+.invslot {
+  position: relative;
+  display: inline-block;
+  background: #8B8B8B no-repeat center center / 72px 72px;
+  background-color: #8b8b8b;
+  background-image: none;
+  border: 2px solid;
+  border-top-color: currentcolor;
+  border-right-color: currentcolor;
+  border-bottom-color: currentcolor;
+  border-left-color: currentcolor;
+  border-color: #373737 #FFF #FFF #373737;
+  width: 72px;
+  height: 72px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.mcui {
+  background-color: #282b2d;
+  border-color: #3a3a3a #545454 #545454 #3a3a3a;
+  display: inline-block;
+  position: relative;
+  background-color: #C6C6C6;
+  border: 2px solid;
+  border-top-color: currentcolor;
+  border-right-color: currentcolor;
+  border-bottom-color: currentcolor;
+  border-left-color: currentcolor;
+  border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+  padding: 6px;
+  text-align: left;
+  vertical-align: bottom;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.mcui-row {
+  display: block;
+}
+
+.mcui-input {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mcui-arrow {
+  background-image: url("/assets/arrow.png");
+  background-color: rgba(0, 0, 0, 0);
+  width: 88px;
+  height: 60px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  bottom: 72px;
+}
+
+.typeOfCrafting {
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  bottom: -40px;
+  font-weight: 900;
+  font-size: 1rem;
+  color: #202224;
+}
+
+.invslot-result {
+  margin-left: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  bottom: 72px;
+}
+
+.quantnumber {
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  vertical-align: bottom;
+  bottom: -72px;
+  color: #202224;
+}
 /*# sourceMappingURL=style.css.map */
