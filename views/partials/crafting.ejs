@@ -1,34 +1,32 @@
-<h3 class="crafting"><%=res.title%> </h5>
-<div float="left">
+<div>
   <span class="mcui mcui-Crafting_Table pixel-image">
     <span class="mcui-input">
 
       <% for( let i = 0; i < 3; i++ ) { %>
-        <span class="mcui-row">
-          <% for( let y = 0; y < 3; y++ ) { %>
-            <% let tempURL; %> 
-            <% let tempTitle; %> 
-            <%console.log(res.pattern[i][y]);%>
-            <% if(res.pattern[i][y]){ %> 
+      <span class="mcui-row">
+        <% for( let y = 0; y < 3; y++ ) { %>
+        <% let tempURL; %>
+        <% let tempTitle; %>
+        <% if(res.pattern[i][y]){ %>
 
-              <% let prop = res.pattern[i][y]; %> 
-              <% tempURL = res.tag[prop].url; %> 
-              <% tempTitle = res.tag[prop].title; %> 
-            <% } else { %>
+        <% let prop = res.pattern[i][y]; %>
+        <% tempURL = res.tag[prop].url; %>
+        <% tempTitle = res.tag[prop].title; %>
+        <% } else { %>
 
-              <% tempURL = "/assets/empty.png";%>
-              <% tempTitle = "";%> 
+        <% tempURL = "/assets/empty.png";%>
+        <% tempTitle = "";%>
 
-            <% } %>   
+        <% } %>
 
-            <a><span class="invslot" style="background-image: url(<%=tempURL%>);"  title="<%= tempTitle %> "></span></a>
-          <% } %>
-        </span>
+        <a><span class="invslot" style="background-image: url(<%=tempURL%>);" title="<%= tempTitle %> "></span></a>
+        <% } %>
+      </span>
       <% } %>
     </span>
     <span class="mcui-arrow">
       <br>
-      <%if(res.type === "shapeless"){%> 
+      <%if(res.type === "shapeless"){%>
       <span class="typeOfCrafting">
         Shapeless
       </span>
@@ -37,10 +35,10 @@
 
     <a href="#">
       <span class="invslot invslot-result" style="background-image: url(<%=res.url%>);" title="<%= res.title %> ">
-        <% if(res.cnt > 1) { %>
-        <span class="quantnumber"><%=res.cnt +"x"%> </span>
-        <% } %>
-      </span>
+      <% if(res.cnt > 1) { %>
+      <span class="quantnumber"><%=res.cnt +"x"%> </span>
+      <% } %>
+    </span>
     </a>
   </span>
   </span>

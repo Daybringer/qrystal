@@ -320,4 +320,10 @@ p {
   bottom: -72px;
   color: #202224;
 }
+
+.example-item {
+  position: absolute;
+  left: 405px;
+  top: 220px;
+}
 /*# sourceMappingURL=style.css.map */

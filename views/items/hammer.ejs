@@ -1,3 +1,23 @@
-<%- include ("../partials/crafting",{res: lookup.stone_hammer})%>
-<%- include ("../partials/crafting",{res: lookup.iron_hammer})%>
-<%- include ("../partials/crafting",{res: lookup.diamond_hammer})%>
+<a><span class="invslot example-item" style="background-image: url(<%=lookup.diamond_hammer.url%>);"
+    title="Diamond Hammer"></span></a>
+<h1>Hamer</h1>
+<p class="lead font-weight-normal"> There r 3 hemrs <br>
+  hamerz is gud 4 banging stuffs <br>
+  crush dis crush dat <br>
+  ashes 2 ashes, dust 2 dust <br>
+</p>
+
+
+<h2>Obtaining</h2>
+<p>Can be kraftd</p>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr);
+">
+  <%- include ("../partials/crafting",{res: lookup.stone_hammer})%>
+  <%- include ("../partials/crafting",{res: lookup.iron_hammer})%>
+  <%- include ("../partials/crafting",{res: lookup.diamond_hammer})%>
+</div>
+
+can b in dungeon chest about 6 often
+
+<h2>Usage</h2>
+<p>Hamer is jus 4 <a href="#smashin" class="text-info">smashin</a> stuffs. Read about dat here</p>
