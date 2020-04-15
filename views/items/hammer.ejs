@@ -1,47 +1,68 @@
-<a><span class="invslot example-item">
-    <span class="mySlideIndic">
-      <img title="Diamond Hammer" src="<%=lookup.diamond_hammer.url%>">
-    </span>
-    <span class="mySlideIndic">
-      <img title="Stone Hammer" src="<%=lookup.stone_hammer.url%>">
-    </span>
-    <span class="mySlideIndic">
-      <img title="Iron Hammer" src="<%=lookup.iron_hammer.url%>">
-    </span>
-  </span></a>
-<h1>Hamer</h1>
-<p class="lead font-weight-normal"> There r 3 hemrs <br>
-  hamerz is gud 4 banging stuffs <br>
-  crush dis crush dat <br>
-  ashes 2 ashes, dust 2 dust <br>
+<div class="row mb-4">
+
+  <div class="mr-5">
+    <!-- ? TITLE -->
+    <h1 class="ml-2">Hammer</h1>
+  </div>
+
+  <div class="">
+    <!-- ? Example item -->
+    <a><span class="invslot example-item">
+        <span class="mySlideIndic">
+          <img title="Diamond Hammer" src="<%=lookup.diamond_hammer.url%>">
+        </span>
+        <span class="mySlideIndic">
+          <img title="Stone Hammer" src="<%=lookup.stone_hammer.url%>">
+        </span>
+        <span class="mySlideIndic">
+          <img title="Iron Hammer" src="<%=lookup.iron_hammer.url%>">
+        </span>
+      </span></a>
+  </div>
+
+
+</div>
+<!-- ? LEAD TEXT -->
+<p class="lead font-weight-normal"> Hammers are one of the most important (and one of the few existing) tools in
+  Qrystal. There are meant to multiply income from mined
+  ores and qrystals. <br> They exist in 3 variations: stone, iron and diamon.</p>
+<p class="lead font-weight-normal"> But that's not all. Hammers are also good for destroying your firends machines and
+  crippling his mother's head.
 </p>
+<p class="lead font-weight-normal"> As all good things must at some time end, ends this description too.</p>
 
+<!-- ? OBTAINING -->
+<h3>Obtaining</h3>
 
-<h2>Obtaining</h2>
-<p>Can be kraftd</p>
-<div style="display: grid; grid-template-columns: repeat(3, 1fr);
+<!-- ? CRAFTING -->
+<h4>Craftable:</h4>
+<div style="max-width: 100%; overflow-x: auto;
 ">
   <%- include ("../partials/crafting_carousel",{craftArr: [lookup.diamond_hammer, lookup.stone_hammer, lookup.iron_hammer, ]})%>
 </div>
 
-can b in dungeon chest about 6 often
+<h4>Dungeon loot:</h4>
+<p class="lead font-weight-normal">
+  Can be found in spooky dungeons, where the skeleton sleep and the zombies are trying to fuck your wifes.
+</p>
+<!-- ? USAGE -->
+<h3>Usage</h3>
+<p> Hammer is
 
-<h2>Usage</h2>
-<p>Hamer is jus 4 <a href="#smashin" class="text-info">smashin</a> stuffs. Read about dat here</p>
+  <!-- ? CAROUSEL example-item script -->
+  <script>
+    let slideIndexIndic = 0;
+    carouselIndic();
 
-<script>
-  let slideIndexIndic = 0;
-  carouselIndic();
-
-  function carouselIndic() {
-    var i;
-    var x = document.getElementsByClassName("mySlideIndic");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+    function carouselIndic() {
+      var i;
+      var x = document.getElementsByClassName("mySlideIndic");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndexIndic++;
+      if (slideIndexIndic > x.length) { slideIndexIndic = 1 }
+      x[slideIndexIndic - 1].style.display = "block";
+      setTimeout(carouselIndic, 2000); // Change image every 2 seconds
     }
-    slideIndexIndic++;
-    if (slideIndexIndic > x.length) { slideIndexIndic = 1 }
-    x[slideIndexIndic - 1].style.display = "block";
-    setTimeout(carouselIndic, 2000); // Change image every 2 seconds
-  }
-</script>
+  </script>
