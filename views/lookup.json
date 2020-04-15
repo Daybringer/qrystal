@@ -2,37 +2,63 @@
   "diamond_hammer": {
     "title": "Diamond Hammer",
     "pattern": [
-      ["X","#","X"],
-      ["","#",""],
-      ["","#",""]],
+      [
+        "X",
+        "#",
+        "X"
+      ],
+      [
+        "",
+        "#",
+        ""
+      ],
+      [
+        "",
+        "#",
+        ""
+      ]
+    ],
     "tag": {
-      "X":{
-        "url":"/assets/vannila/dia.png",
-        "title":"Diamond"
+      "X": {
+        "url": "/assets/vannila/dia.png",
+        "title": "Diamond"
       },
-      "#":{
-        "url":"/assets/vannila/wood_stick.png",
-        "title":"Stick"
+      "#": {
+        "url": "/assets/vannila/wood_stick.png",
+        "title": "Stick"
       }
     },
-    "cnt": 1,
+    "cnt": 2,
     "url": "/assets/items/dia_hammer.png",
-    "type": "shaped"
+    "type": "shapeless"
   },
   "iron_hammer": {
     "title": "Iron Hammer",
     "pattern": [
-      ["X","#","X"],
-      ["","#",""],
-      ["","#",""]],
+      [
+        "X",
+        "#",
+        "X"
+      ],
+      [
+        "",
+        "#",
+        ""
+      ],
+      [
+        "",
+        "#",
+        ""
+      ]
+    ],
     "tag": {
-      "X":{
-        "url":"/assets/vannila/iron_ingot.png",
-        "title":"Iron "
+      "X": {
+        "url": "/assets/vannila/iron_ingot.png",
+        "title": "Iron "
       },
-      "#":{
-        "url":"/assets/vannila/wood_stick.png",
-        "title":"Stick"
+      "#": {
+        "url": "/assets/vannila/wood_stick.png",
+        "title": "Stick"
       }
     },
     "cnt": 1,
@@ -42,17 +68,30 @@
   "stone_hammer": {
     "title": "Stone Hammer",
     "pattern": [
-      ["X","#","X"],
-      ["","#",""],
-      ["","#",""]],
+      [
+        "X",
+        "#",
+        "X"
+      ],
+      [
+        "",
+        "#",
+        ""
+      ],
+      [
+        "",
+        "#",
+        ""
+      ]
+    ],
     "tag": {
-      "X":{
-        "url":"/assets/vannila/stone.png",
-        "title":"Stone"
+      "X": {
+        "url": "/assets/vannila/stone.png",
+        "title": "Stone"
       },
-      "#":{
-        "url":"/assets/vannila/wood_stick.png",
-        "title":"Stick"
+      "#": {
+        "url": "/assets/vannila/wood_stick.png",
+        "title": "Stick"
       }
     },
     "cnt": 1,

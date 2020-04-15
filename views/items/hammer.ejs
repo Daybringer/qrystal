@@ -1,5 +1,14 @@
-<a><span class="invslot example-item" style="background-image: url(<%=lookup.diamond_hammer.url%>);"
-    title="Diamond Hammer"></span></a>
+<a><span class="invslot example-item">
+    <span class="mySlide">
+      <img title="Diamond Hammer" src="<%=lookup.diamond_hammer.url%>">
+    </span>
+    <span class="mySlide">
+      <img title="Iron Hammer" src="<%=lookup.iron_hammer.url%>">
+    </span>
+    <span class="mySlide">
+      <img title="Stone Hammer" src="<%=lookup.stone_hammer.url%>">
+    </span>
+  </span></a>
 <h1>Hamer</h1>
 <p class="lead font-weight-normal"> There r 3 hemrs <br>
   hamerz is gud 4 banging stuffs <br>
@@ -21,3 +30,20 @@ can b in dungeon chest about 6 often
 
 <h2>Usage</h2>
 <p>Hamer is jus 4 <a href="#smashin" class="text-info">smashin</a> stuffs. Read about dat here</p>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlide");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  } 
+</script>
