@@ -28,9 +28,9 @@
         "title": "Stick"
       }
     },
-    "cnt": 2,
+    "cnt": 1,
     "url": "/assets/items/dia_hammer.png",
-    "type": "shapeless"
+    "type": "shaped"
   },
   "iron_hammer": {
     "title": "Iron Hammer",

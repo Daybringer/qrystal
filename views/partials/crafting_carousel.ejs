@@ -1,0 +1,85 @@
+<div>
+  <span class="mcui mcui-Crafting_Table pixel-image">
+    <span class="mcui-input">
+
+      <% for( let i = 0; i < 3; i++ ) { %>
+      <span class="mcui-row">
+        <% for( let y = 0; y < 3; y++ ) { %>
+        <a><span class="invslot">
+            <% for( let foo = 0; foo < craftArr.length; foo++ ) { %>
+            <% let tempURL = []; %>
+            <% let tempTitle = []; %>
+            <% let currItem = craftArr[foo]; %>
+
+            <% if(currItem.pattern[i][y]){ %>
+            <% let prop = currItem.pattern[i][y]; %>
+            <% tempURL = currItem.tag[prop].url; %>
+            <% tempTitle = currItem.tag[prop].title; %>
+
+            <% } else { %>
+            <% tempURL = "/assets/empty.png";%>
+            <% tempTitle = "";%>
+            <% } %>
+            <span class="mySlide<%=foo%>">
+              <img title="<%=tempTitle%>" src="<%=tempURL%>">
+            </span>
+            <% } %>
+          </span></a>
+        <% } %>
+      </span>
+      <% } %>
+    </span>
+    <span class="mcui-arrow">
+      <br>
+      <%if(craftArr[0].type === "shapeless"){%>
+      <span class="typeOfCrafting">
+        Shapeless
+      </span>
+      <%}%> 
+    </span>
+
+    <a href="#">
+      <a><span class="invslot invslot-result">
+          <% for( let foo = 0; foo < craftArr.length; foo++ ) { %>
+      <% let currItem = craftArr[foo]; %>
+      <% let tempURL = currItem.url; %>
+      <% let tempTitle = currItem.title; %>
+
+
+      <span class="mySlide<%=foo%>">
+        <img title="<%=tempTitle%>" src="<%=tempURL%>">
+      </span>
+      <% } %>
+    </span></a>
+    <% if(craftArr[0].cnt > 1) { %>
+    <span class="quantnumber"><%=craftArr[0].cnt +"x"%> </span>
+    <% } %>
+  </span>
+  </a>
+  </span>
+  </span>
+</div>
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    for (let x = 0; x < 3; x++) {
+      let i;
+      let slides = document.getElementsByClassName("mySlide" + x);
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+    }
+    slideIndex++;
+    var slides = document.getElementsByClassName("mySlide" + String((slideIndex - 1)));
+    if (slideIndex >= 3) { slideIndex = 0 }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "block";
+    }
+
+
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  } 
+</script>
